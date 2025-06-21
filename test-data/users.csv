@@ -1,0 +1,5 @@
+firstName,lastName,email,password,telephone
+John,Doe,john.doe@example.com,SecurePass123!,1234567890
+Jane,Smith,jane.smith@example.com,SecurePass123!,0987654321
+Bob,Johnson,bob.johnson@example.com,SecurePass123!,5555555555
+Alice,Brown,alice.brown@example.com,SecurePass123!,1111111111

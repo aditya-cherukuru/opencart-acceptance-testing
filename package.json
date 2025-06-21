@@ -1,0 +1,44 @@
+{
+  "name": "opencart-acceptance-testing",
+  "version": "1.0.0",
+  "description": "Advanced automated acceptance testing suite for OpenCart e-commerce platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --format progress-bar --format json:cucumber-reports/cucumber-report.json",
+    "test:parallel": "cucumber-js --parallel 2 --format json:cucumber-reports/cucumber-report.json",
+    "test:chrome": "cross-env BROWSER=chromium npm run test",
+    "test:firefox": "cross-env BROWSER=firefox npm run test",
+    "test:safari": "cross-env BROWSER=webkit npm run test",
+    "test:all-browsers": "npm run test:chrome && npm run test:firefox && npm run test:safari",
+    "test:debug": "cross-env HEADLESS=false cucumber-js --tags @debug --format json:cucumber-reports/cucumber-report.json",
+    "test:smoke": "cucumber-js --tags @smoke --format json:cucumber-reports/cucumber-report.json",
+    "test:with-reports": "./scripts/run-tests-with-reports.sh",
+    "report": "allure serve allure-results",
+    "report:html": "ts-node utils/report-generator.ts --html",
+    "report:summary": "ts-node utils/report-generator.ts --summary",
+    "clean": "rimraf allure-results cucumber-reports screenshots videos logs",
+    "install-browsers": "npx playwright install"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "@playwright/test": "^1.44.0",
+    "allure-commandline": "^2.29.0",
+    "allure-cucumberjs": "^2.15.0",
+    "csv-parse": "^5.5.6",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "playwright": "^1.44.0",
+    "rimraf": "^5.0.7",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@cucumber/html-formatter": "^21.12.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.14.2",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

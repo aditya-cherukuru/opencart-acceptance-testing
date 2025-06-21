@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "utils/**/*",
+    "hooks/**/*",
+    "step-definitions/**/*",
+    "page-objects/**/*",
+    "*.d.ts",              // Include root-level declaration files
+    "types/**/*.d.ts"      // Include declaration files in types/ folder, if you have one
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

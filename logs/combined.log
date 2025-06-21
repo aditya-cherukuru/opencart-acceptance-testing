@@ -1,0 +1,120 @@
+{"level":"info","message":"Loaded 4 users and 4 products","timestamp":"2025-06-20T18:53:52.659Z"}
+{"level":"info","message":"Test suite initialization completed","timestamp":"2025-06-20T18:53:52.661Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:53:52.702Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:53:52.703Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:53:54.129Z"}
+{"level":"info","message":"Starting scenario: Complete guest checkout process","timestamp":"2025-06-20T18:53:54.129Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:55:48.348Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:55:48.353Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:55:48.353Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:55:49.332Z"}
+{"level":"info","message":"Starting scenario: Checkout as registered user","timestamp":"2025-06-20T18:55:49.333Z"}
+{"level":"info","message":"Screenshot saved: screenshots/failed-Checkout-as-registered-user-1750445764851.png","timestamp":"2025-06-20T18:56:04.985Z"}
+{"level":"error","message":"Scenario failed: Checkout as registered user","timestamp":"2025-06-20T18:56:04.987Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:05.235Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:05.240Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:56:05.240Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:56:06.149Z"}
+{"level":"info","message":"Starting scenario: Basic product search","timestamp":"2025-06-20T18:56:06.150Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:56:06.151Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:12.139Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:12.141Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:56:12.141Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:56:12.936Z"}
+{"level":"info","message":"Starting scenario: Search results sorting","timestamp":"2025-06-20T18:56:12.937Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:56:12.937Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:20.989Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:20.991Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:56:20.991Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:56:21.806Z"}
+{"level":"info","message":"Starting scenario: Advanced search with filters","timestamp":"2025-06-20T18:56:21.806Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:56:21.807Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:32.029Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:32.031Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:56:32.031Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:56:32.839Z"}
+{"level":"info","message":"Starting scenario: Search for non-existent product","timestamp":"2025-06-20T18:56:32.840Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:56:32.842Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:36.774Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:56:36.775Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:56:36.776Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:56:37.635Z"}
+{"level":"info","message":"Starting scenario: Add products to cart","timestamp":"2025-06-20T18:56:37.636Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:56:37.637Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:32.135Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:32.137Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:57:32.137Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:57:33.019Z"}
+{"level":"info","message":"Starting scenario: Update product quantity in cart","timestamp":"2025-06-20T18:57:33.019Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:57:33.020Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:38.204Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:38.206Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:57:38.206Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:57:38.986Z"}
+{"level":"info","message":"Starting scenario: Remove product from cart","timestamp":"2025-06-20T18:57:38.987Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:57:38.987Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:44.144Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:44.146Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:57:44.146Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:57:44.931Z"}
+{"level":"info","message":"Starting scenario: Successful user registration with valid data","timestamp":"2025-06-20T18:57:44.931Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:57:44.932Z"}
+{"level":"info","message":"Screenshot saved: screenshots/registration-page-loaded-1750445867532.png","timestamp":"2025-06-20T18:57:47.653Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:54.877Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:57:54.879Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:57:54.879Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:57:55.681Z"}
+{"level":"info","message":"Starting scenario: Registration validation with invalid data","timestamp":"2025-06-20T18:57:55.681Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:57:55.681Z"}
+{"level":"info","message":"Screenshot saved: screenshots/registration-page-loaded-1750445878352.png","timestamp":"2025-06-20T18:57:58.471Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:07.642Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:07.643Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:58:07.643Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:58:08.447Z"}
+{"level":"info","message":"Starting scenario: Registration validation with invalid data","timestamp":"2025-06-20T18:58:08.448Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:58:08.448Z"}
+{"level":"info","message":"Screenshot saved: screenshots/registration-page-loaded-1750445891051.png","timestamp":"2025-06-20T18:58:11.151Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:20.360Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:20.361Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:58:20.361Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:58:21.212Z"}
+{"level":"info","message":"Starting scenario: Registration validation with invalid data","timestamp":"2025-06-20T18:58:21.212Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:58:21.212Z"}
+{"level":"info","message":"Screenshot saved: screenshots/registration-page-loaded-1750445903888.png","timestamp":"2025-06-20T18:58:24.019Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:33.235Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:33.237Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:58:33.237Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:58:34.160Z"}
+{"level":"info","message":"Starting scenario: Registration validation with invalid data","timestamp":"2025-06-20T18:58:34.160Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:58:34.161Z"}
+{"level":"info","message":"Screenshot saved: screenshots/registration-page-loaded-1750445916788.png","timestamp":"2025-06-20T18:58:36.900Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:46.054Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:46.056Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:58:46.056Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:58:46.894Z"}
+{"level":"info","message":"Starting scenario: Registration validation with invalid data","timestamp":"2025-06-20T18:58:46.895Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:58:46.895Z"}
+{"level":"info","message":"Screenshot saved: screenshots/registration-page-loaded-1750445929636.png","timestamp":"2025-06-20T18:58:49.744Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:58.886Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:58:58.887Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:58:58.887Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:58:59.745Z"}
+{"level":"info","message":"Starting scenario: Registration validation with invalid data","timestamp":"2025-06-20T18:58:59.745Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:58:59.746Z"}
+{"level":"info","message":"Screenshot saved: screenshots/registration-page-loaded-1750445942356.png","timestamp":"2025-06-20T18:59:02.467Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:59:11.662Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:59:11.665Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:59:11.665Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:59:12.462Z"}
+{"level":"info","message":"Starting scenario: Successful login with valid credentials","timestamp":"2025-06-20T18:59:12.463Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:59:12.464Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:59:13.222Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:59:39.563Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:59:39.564Z"}
+{"level":"info","message":"Launching chromium browser","timestamp":"2025-06-20T18:59:39.565Z"}
+{"level":"info","message":"Browser launched successfully","timestamp":"2025-06-20T18:59:40.370Z"}
+{"level":"info","message":"Starting scenario: Login attempt with invalid credentials","timestamp":"2025-06-20T18:59:40.371Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:59:40.371Z"}
+{"level":"info","message":"Navigating to http://localhost/opencart/","timestamp":"2025-06-20T18:59:41.095Z"}
+{"level":"info","message":"Browser closed","timestamp":"2025-06-20T18:59:47.454Z"}
+{"level":"info","message":"Test suite completed","timestamp":"2025-06-20T18:59:47.455Z"}
