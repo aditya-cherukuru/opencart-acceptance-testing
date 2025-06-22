@@ -1,297 +1,320 @@
 # OpenCart Automated Acceptance Testing Suite
 
+**Tests:** TypeScript · Playwright · Cucumber  
+**Academic Project:** Software Testing Course - THWS University  
+**Author:** Aditya Cherukuru  
+**Topic:** Automated Acceptance Testing & Reporting
+
+---
+
 ## 🎯 Project Overview
+An automated acceptance testing and reports framework for OpenCart e-commerce platform that replaces manual testing with reliable, fast, and consistent automated tests. Built using modern tools like Playwright and Cucumber.js with BDD methodology.
 
-This is a comprehensive automated acceptance testing suite for OpenCart e-commerce platform, built with modern testing tools and best practices. The project demonstrates enterprise-level test automation with BDD (Behavior-Driven Development) approach.
+---
 
-## 🚀 Key Features
 
-- **Modern Tech Stack**: Playwright + Cucumber + TypeScript
-- **BDD Approach**: Gherkin scenarios for business-readable tests
-- **Cross-Browser Testing**: Chrome, Firefox, Safari support
-- **Parallel Execution**: Faster test runs with parallel processing
-- **Rich Reporting**: HTML, Allure, and JSON reports
-- **CI/CD Ready**: GitHub Actions integration
-- **Page Object Model**: Maintainable and scalable code structure
+## 🛠️ Technology Stack
 
-## 📁 Project Structure
+| Technology   | Purpose                 | Why I Chose It                          |
+|-------------|--------------------------|------------------------------------------|
+| Playwright  | Browser automation      | Modern, fast, multi-browser support     |
+| Cucumber.js | BDD framework           | Business-readable test scenarios        |
+| TypeScript  | Programming language    | Type safety and better maintainability  |
+| Node.js     | Runtime environment     | Rich ecosystem and easy setup           |
 
-```
-├── features/                 # Gherkin feature files
-├── step-definitions/         # Step implementation files
-├── page-objects/            # Page Object Model classes
-├── utils/                   # Utility classes and helpers
-├── test-data/              # Test data files (CSV, JSON)
-├── hooks/                  # Test hooks and world setup
-├── cucumber-reports/       # Generated HTML reports
-├── allure-results/         # Allure test results
-├── screenshots/            # Failure screenshots
-├── videos/                 # Test execution videos
-└── logs/                   # Application logs
-```
+---
 
-## 🛠️ Installation & Setup
+## 🚀 Quick Start
 
-1. **Clone the repository**
+### Prerequisites
+- Node.js 18+  
+- XAMPP (for OpenCart)  
+- Git  
+
+### Installation
+
+#### Setup OpenCart
 ```bash
-git clone <repository-url>
+# Install XAMPP and start Apache + MySQL
+# Download OpenCart to C:\xampp\htdocs\opencart\
+# Complete OpenCart installation at http://localhost/opencart/
+```
+
+#### Clone and Install
+```bash
+git clone <your-repo-url>
 cd opencart-acceptance-testing
-```
-
-2. **Install dependencies**
-```bash
 npm install
+npx playwright install
 ```
 
-3. **Install browser binaries**
-```bash
-npm run install-browsers
-```
-
-4. **Verify installation**
+#### Run Tests
 ```bash
 npm test
 ```
+
+---
+
+## 🧪 Test Coverage
+
+### ✅ Implemented Test Scenarios
+- **User Registration & Login** – Account creation and authentication  
+- **Product Search & Filtering** – Search functionality with sorting options  
+- **Shopping Cart Management** – Add, update, remove items  
+- **Checkout Process** – Guest and registered user checkout flows  
+- **Form Validation** – Input validation and error handling  
+
+---
+
+## 📊 Test Results Summary
+
+- ✅ Total Scenarios: 18  
+- ✅ Passed: 17 (94%)  
+- ❌ Failed: 1 (6%)  
+- ⏱️ Execution Time: ~5 minutes  
+- 🌐 Browsers: Chrome, Firefox, Safari  
+
+---
 
 ## 🏃‍♂️ Running Tests
 
 ### Basic Commands
 ```bash
-# Run all tests
-npm test
-
-# Run tests in parallel
-npm run test:parallel
-
-# Run specific browser tests
+npm test                    # Run all tests (visible browser)
+npm run test:headless       # Run in headless mode (faster)
 npm run test:chrome
 npm run test:firefox
 npm run test:safari
-
-# Run all browsers sequentially
-npm run test:all-browsers
+npm run test:debug          # Debug mode (slower execution)
 ```
 
-### Advanced Commands
+### Specific Test Execution
 ```bash
-# Run with specific tags
+npx cucumber-js features/checkout-process.feature
 npx cucumber-js --tags "@smoke"
-npx cucumber-js --tags "@critical and not @slow"
-
-# Run single feature
-npx cucumber-js features/user-registration.feature
-
-# Debug mode (headed browser)
-HEADLESS=false npm test
+npx cucumber-js features/user-registration.feature:15
 ```
 
-## 📊 Reports & Analysis
+---
+
+## 📊 Reports & Documentation
 
 ### Generate Reports
 ```bash
-# Generate HTML report
-npm run report:html
-
-# View Allure report
 npm run report
-
-# Generate summary report
-npm run report:summary
+npm run report:open
 ```
 
-### Report Types
+### Report Features
+- 📈 Execution Summary – Pass/fail statistics  
+- 🖼️ Screenshots – Automatic capture on failures  
+- ⏱️ Performance Metrics – Step execution timing  
+- 🌐 Browser Information – Cross-browser results  
+- 📝 Detailed Logs – Step-by-step execution details  
 
-1. **Cucumber HTML Report**
-   - Location: `cucumber-reports/html/index.html`
-   - Features: Scenario details, step results, execution time
+---
 
-2. **Allure Report**
-   - Command: `npm run report`
-   - Features: Interactive dashboard, screenshots, trends, categories
+## 🏗️ Project Structure
 
-3. **JSON Report**
-   - Location: `cucumber-reports/cucumber-report.json`
-   - Usage: Integration with other tools
-
-## 🧪 Test Scenarios
-
-### Covered Functionality
-- ✅ User registration and authentication
-- ✅ Product search and filtering
-- ✅ Shopping cart management
-- ✅ Complete checkout process
-- ✅ Order confirmation and tracking
-- ✅ Admin panel operations (if enabled)
-
-### Test Categories
-- **@smoke**: Critical functionality tests
-- **@regression**: Full feature coverage
-- **@critical**: Business-critical scenarios
-- **@negative**: Error handling validation
-
-## 🔧 Configuration
-
-### Environment Variables
-```bash
-# Browser selection
-BROWSER=chromium|firefox|webkit
-
-# Execution mode
-HEADLESS=true|false
-
-# Test environment
-TEST_ENV=dev|staging|prod
-
-# Logging level
-LOG_LEVEL=debug|info|warn|error
+```
+opencart-acceptance-testing/
+├── features/                    # BDD test scenarios
+├── step-definitions/           # Test step implementations
+├── page-objects/               # Page Object Model classes
+├── test-data/                  # Test data and fixtures
+├── utils/                      # Helper functions
+├── screenshots/                # Failure screenshots
+└── cucumber-reports/           # JSON reports and Generated HTML Reports
 ```
 
-### Test Data Management
-- User data: `test-data/users.csv`
-- Product data: `test-data/products.csv`
-- Configuration: `config/test-config.json`
+---
 
-## 🏗️ Architecture & Design Patterns
+## 🔧 Technical Implementation
 
-### Page Object Model
-```typescript
-// Clean, maintainable page representations
-export class HomePage extends BasePage {
-  private readonly searchInput = this.page.locator('input[name="search"]');
-  
-  async searchForProduct(term: string): Promise<void> {
-    await this.fillInput(this.searchInput, term);
+### Page Object Model Example
+
+```ts
+export class CheckoutPage extends BasePage {
+  private readonly emailField = this.page.locator('input[name="email"]')
+  private readonly continueButton = this.page.locator('input[value="Continue"]')
+
+  async fillBillingDetails(customer: CustomerData): Promise<void> {
+    await this.emailField.fill(customer.email)
+    await this.waitForElement(this.continueButton)
   }
 }
 ```
 
-### BDD with Cucumber
+### BDD Scenario Example
+
 ```gherkin
-# Business-readable scenarios
-Scenario: Successful product search
-  Given I am on the homepage
-  When I search for "laptop"
-  Then I should see relevant search results
+Feature: Checkout Process
+  Scenario: Complete guest checkout
+    Given I have products in my cart
+    When I proceed to checkout as guest
+    And I fill in billing information
+    And I select shipping method
+    And I choose payment method
+    Then I should see order confirmation
 ```
-
-### Utility Classes
-- **BrowserManager**: Browser lifecycle management
-- **TestDataManager**: Test data loading and generation
-- **ReportGenerator**: Multiple report format generation
-- **Logger**: Structured logging with Winston
-
-## 🚀 CI/CD Integration
-
-### GitHub Actions
-- Automated test execution on push/PR
-- Cross-browser testing matrix
-- Artifact collection (reports, screenshots)
-- Slack notifications on failure
-
-### Integration Points
-- **JIRA**: Test case linking
-- **Slack**: Real-time notifications
-- **Email**: Summary reports
-- **Database**: Test results storage
-
-## 📈 Performance & Scalability
-
-### Optimization Features
-- Parallel test execution (3x faster)
-- Smart waits and timeouts
-- Efficient element location strategies
-- Resource cleanup and memory management
-
-### Scalability Considerations
-- Docker containerization ready
-- Cloud execution support (AWS, Azure)
-- Distributed testing capability
-- Load balancing for large test suites
-
-## 🔍 Debugging & Troubleshooting
-
-### Debug Mode
-```bash
-# Run with browser visible
-HEADLESS=false npm test
-
-# Enable debug logging
-LOG_LEVEL=debug npm test
-
-# Run single scenario
-npx cucumber-js features/login.feature:10
-```
-
-### Common Issues
-1. **Element not found**: Check selectors in page objects
-2. **Timeout errors**: Increase wait times or check network
-3. **Flaky tests**: Review synchronization points
-4. **Browser crashes**: Update browser binaries
-
-## 📚 Best Practices Implemented
-
-### Code Quality
-- TypeScript for type safety
-- ESLint for code standards
-- Prettier for formatting
-- Comprehensive error handling
-
-### Test Design
-- Independent test scenarios
-- Reusable step definitions
-- Data-driven testing approach
-- Proper test isolation
-
-### Reporting
-- Multiple report formats
-- Rich failure diagnostics
-- Historical trend analysis
-- Business-friendly summaries
-
-## 🎯 Success Metrics
-
-### Test Execution
-- **Speed**: 80% faster than manual testing
-- **Reliability**: <2% flaky test rate
-- **Coverage**: 95% of critical user journeys
-- **Maintainability**: 70% less maintenance effort
-
-### Business Impact
-- **Bug Detection**: 40% more pre-production issues found
-- **Release Confidence**: Quantified quality gates
-- **Time to Market**: 50% faster release cycles
-- **Cost Savings**: Documented ROI of 300%
-
-## 🔮 Future Roadmap
-
-### Phase 2 Features
-- API testing integration
-- Visual regression testing
-- Performance testing addition
-- Mobile app testing support
-
-### Advanced Capabilities
-- AI-powered test generation
-- Predictive failure analysis
-- Self-healing test scripts
-- Advanced analytics dashboard
-
-## 📞 Support & Contribution
-
-### Getting Help
-- Check existing issues in repository
-- Review troubleshooting guide
-- Contact team via Slack channel
-
-### Contributing
-1. Fork the repository
-2. Create feature branch
-3. Add tests for new functionality
-4. Ensure all tests pass
-5. Submit pull request
 
 ---
 
-**Recommendation**: ✅ **PRODUCTION READY**
+## 📈 Results & Impact
 
-This testing suite provides enterprise-grade quality assurance with modern tools, comprehensive coverage, and actionable insights for continuous improvement.
+| Metric              | Manual Testing | Automated Testing | Improvement     |
+|---------------------|----------------|--------------------|-----------------|
+| Execution Time      | 2-3 hours      | 5 minutes          | 96% faster      |
+| Browser Coverage    | 1 browser      | 3+ browsers        | 3x coverage     |
+| Consistency         | Variable       | 100% consistent    | No human error  |
+
+---
+
+## 🔄 Lessons Learned
+
+- **Start Small** – Begin with most critical scenarios  
+- **Invest in Maintenance** – Keep tests updated with application changes  
+- **Team Training** – Ensure team understands BDD methodology  
+- **Proper Error Handling** – Robust tests with good debugging  
+
+---
+
+## 🚀 Future Enhancements
+
+- CI/CD Integration  
+- API Testing  
+- Performance Testing  
+- Mobile Testing  
+- Visual Regression Testing  
+
+---
+
+## 🔧 Troubleshooting
+
+Includes solutions for:
+- Product search failures  
+- Browser not launching  
+- Reports not generating  
+- Checkout failures  
+- Database connection issues  
+- Timeout errors  
+- Screenshot failures  
+
+---
+
+## ✅ Environment Verification Checklist
+
+Before running tests:
+- Apache + MySQL running (XAMPP)  
+- OpenCart accessible via `http://localhost/opencart/`  
+- Required products added  
+- Search works manually  
+- Playwright browsers installed  
+
+---
+
+# 📚 External Code Sources & References
+
+### Third-Party Libraries Used
+
+| Library        | Version   | Purpose                       | License       | Source |
+|----------------|-----------|-------------------------------|---------------|--------|
+| Playwright     | 1.44.0    | Browser automation            | Apache-2.0    | [GitHub](https://github.com/microsoft/playwright) |
+| Cucumber.js    | 10.8.0    | BDD framework (Gherkin)       | MIT           | [GitHub](https://github.com/cucumber/cucumber-js) |
+| Winston        | 3.13.0    | Logging                       | MIT           | [GitHub](https://github.com/winstonjs/winston) |
+| csv-parse      | 5.5.6     | CSV file parsing              | BSD-3-Clause  | [GitHub](https://github.com/adaltas/node-csv) |
+| dotenv         | 16.4.5    | Environment variable support  | BSD-2-Clause  | [GitHub](https://github.com/motdotla/dotenv) |
+
+### Code Patterns & Templates Referenced
+
+- **Page Object Model Pattern**  
+  Source: [Playwright POM Guide](https://playwright.dev/docs/pom)  
+  Used in: `page-objects/`  
+  Modifications: Custom waits, OpenCart-specific methods  
+
+- **Cucumber Hooks**  
+  Source: [Cucumber Docs](https://github.com/cucumber/cucumber-js/blob/main/docs/support_files/hooks.md)  
+  Used in: `hooks/hooks.ts`  
+  Modifications: Screenshot capture, browser context management  
+
+- **GitHub Actions Workflow**  
+  Source: [Playwright CI Docs](https://playwright.dev/docs/ci)  
+  Used in: `.github/workflows/acceptance-tests.yml`  
+  Modifications: Multi-browser matrix, artifact archiving  
+
+---
+
+## 🤖 AI Tool Usage Documentation
+
+### Tools Used
+- **Tool**: ChatGPT-4  
+- **Purpose**: Class design, logging integration, documentation  
+- **Extent**: 20% (structural scaffolding, prompt help)
+
+### Specific AI Tools Contributions
+1. **Browser Manager Class**
+   - Prompt: "Create a TypeScript browser manager with error handling"
+   - My Modifications: Logging integration, screenshot logic
+
+2. **Step Definitions**
+   - Tool: GitHub Copilot
+   - Contribution: Auto-complete suggestions
+   - My Work: Business logic, validations, wait strategies
+
+---
+
+## 📦 Detailed Dependency Documentation
+
+### Production Dependencies
+
+| Package              | Version   | Purpose            | License     |
+|----------------------|-----------|--------------------|-------------|
+| @cucumber/cucumber   | ^10.8.0   | BDD framework      | MIT         |
+| @playwright/test     | ^1.44.0   | Test automation    | Apache-2.0  |
+| winston              | ^3.13.0   | Logging            | MIT         |
+| csv-parse            | ^5.5.6    | Test data parsing  | BSD-3-Clause|
+| dotenv               | ^16.4.5   | Env config         | BSD-2-Clause|
+
+### Dev Dependencies
+
+| Package        | Version   | Purpose            | License     |
+|----------------|-----------|--------------------|-------------|
+| typescript     | ^5.4.5    | Type-checking      | Apache-2.0  |
+| ts-node        | ^10.9.2   | Run TS files       | MIT         |
+| @types/node    | ^20.14.2  | Type definitions   | MIT         |
+
+---
+
+
+
+## 🧪 Testing Strategy & Methodology
+
+### Principles
+- **Independent:** All tests can run in isolation  
+- **Repeatable:** Same input → same output  
+- **Fast Feedback:** All tests < 5 min  
+- **Maintainable:** POM abstraction layer  
+
+
+
+### Exception Handling
+- Element not found → Smart retries  
+- Browser crash → Restart mechanism  
+- Missing data → Dynamic fixture creation  
+- Timeouts → Custom timeouts per feature  
+
+---
+
+## 📄 License
+Created for educational use as part of the **Software Testing course at THWS University**.
+
+---
+
+## 👤 Author
+**Aditya Cherukuru** – Developer & Test Architect  
+- Complete implementation and architecture  
+- Page Object Model and BDD test design  
+- Playwright + Cucumber.js integration  
+- Reporting, debugging, and documentation  
+**Course**: Software Testing – THWS University  
+**Submission Date**: 22 June 2025
