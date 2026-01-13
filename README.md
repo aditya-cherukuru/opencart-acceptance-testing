@@ -1,7 +1,6 @@
 # OpenCart Automated Acceptance Testing Suite
 
 **Tests:** TypeScript · Playwright · Cucumber  
-**Academic Project:** Software Testing Course - THWS University  
 **Author:** Aditya Cherukuru  
 **Topic:** Automated Acceptance Testing & Reporting
 
@@ -306,7 +305,7 @@ Before running tests:
 ---
 
 ## 📄 License
-Created for educational use as part of the **Software Testing course at THWS University**.
+Created for educational use for learning.
 
 ---
 
@@ -316,5 +315,4 @@ Created for educational use as part of the **Software Testing course at THWS Uni
 - Page Object Model and BDD test design  
 - Playwright + Cucumber.js integration  
 - Reporting, debugging, and documentation  
-**Course**: Software Testing – THWS University  
-**Submission Date**: 22 June 2025
+
